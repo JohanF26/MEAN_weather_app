@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
+h1 {
+    font-family: 'Cinzel', serif;
+}
+
+h4 {
+    font-family: 'Cinzel', serif;
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.articleDesc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px;    
+    max-height: 48px;     
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}

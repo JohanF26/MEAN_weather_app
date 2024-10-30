@@ -1,0 +1,14 @@
+<h1 class="text-left">{{article.title}}</h1>
+<h6 class="card-subtitle mb-2 text-muted text-left"> Published {{ article.published | datepipe }}</h6>
+
+<div align="center">
+    <img src="{{article.imageUrl}}" style="object-fit: cover; width: 100%; height: 500px;">
+    <div class="divider"></div>
+    
+    <p class="text-left">{{article.description}}</p>
+    <p class="text-left"><small>Source: {{article.url}}</small></p>
+</div>
+
+
+
+

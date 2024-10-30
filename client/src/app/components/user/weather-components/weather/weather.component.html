@@ -1,0 +1,13 @@
+<div *ngIf="loaded; else loading">
+  <app-city-card
+    [unitSystem]="unitSystem"
+    [weather]="weather">
+  </app-city-card>
+</div>
+
+<ng-template #loading>
+  <div class="col p-5" align="center">
+    <img src="assets/images/loading.gif">
+  </div>
+</ng-template>
+

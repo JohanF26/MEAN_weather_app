@@ -1,0 +1,9 @@
+<div>
+    <ul>
+        <div class="card-group">
+            <div class="card" *ngFor="let article of articles">
+                <app-news-item [article]="article"></app-news-item>
+            </div>
+        </div>
+    </ul>
+</div>

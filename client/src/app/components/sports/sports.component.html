@@ -1,0 +1,19 @@
+<h1 class="text-left"><strong>Sports</strong></h1>
+<div *ngIf="articles.length === 0; else nList" class="alert alert-info">No News Added.</div>
+
+<ng-template #nList>
+    <div *ngFor="let article of articles | search: 'Sports' ">
+        <div class="card" style="box-shadow: 4px 4px 5px #ccc;" [routerLink]="['/article', article._id]">
+            <div class="card-horizontal">
+                <img class="card-img w-25" src="{{article.imageUrl}}" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title text-left"><strong>{{article.title}}</strong></h4>
+                    <p class="card-text articleDesc">{{article.description}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+    </div>
+    
+
+</ng-template>

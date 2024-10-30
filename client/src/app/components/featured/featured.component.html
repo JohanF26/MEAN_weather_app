@@ -1,0 +1,13 @@
+<div class="card" [routerLink]="['/article', article._id]">
+    <div class="card-header">
+        Featured
+    </div>
+    <div class="card-body">
+        
+        <h1 class="text-left">{{article.title}}</h1>
+        <h6 class="card-subtitle mb-2 text-muted text-left">Published: {{ article.published | datepipe }}</h6>
+        <br>
+        <p class="text-left articleDesc">{{article.description}}</p>
+    </div>
+</div>
+

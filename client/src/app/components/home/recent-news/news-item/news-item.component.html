@@ -1,0 +1,12 @@
+<!-- <div class="card"> -->
+    <div class="card-body">
+        <h4 class="card-title">{{ article.title }} </h4>
+        <h6 class="card-subtitle mb-2 text-muted">{{ article.published | datepipe }}</h6>
+        <p class="card-text" class="articleDesc">
+            {{article.description}}
+        </p>
+        <button class="btn btn-outline-info" [routerLink]="['/article', article._id]">Read More</button>
+    </div>
+<!-- </div> -->
+
+<!-- <p>news item works!</p> -->
